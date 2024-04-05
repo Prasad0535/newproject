@@ -1,27 +1,24 @@
 import React from 'react'
-import { useState } from 'react';
-import { useHistory } from 'react-router-dom';  
-
-function Namedetails() {
-    const history = useHistory();
-    const [name, setName] = useState('');
-  
-    const handleNext = () => {
-      history.push('/email');
-    };
+import '../CSS/Name.css'
+import { Link, withRouter } from 'react-router-dom'
+function Namedetails(props) {
+  const [name,setname]=React.useState("");
+ // const history=useHistory();
+  const handleNext=()=>{
+    props.history.push({
+      pathname:"/email",
+      state:{name:name}
+    });  
+  }
   return (
-    <>
-        <div>Namedetails</div>
-
-        <div>
-      <h1>Name Details</h1>
-      <label>Name:</label>
-      <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      <button onClick={handleNext}>Next</button>
-    </div>
-    </>
-    
-  );
+  <>
+  <h1>Namedetails</h1>
+  <div className='input'>
+  Name : <input onChange={(e)=>{setname(e.target.value)}} type="text" placeholder=' please enter your name. '></input>
+  </div>
+ <Link to="/email"><button onClick={handleNext}>Next</button></Link> 
+    </> 
+  )
 }
 
 export default Namedetails

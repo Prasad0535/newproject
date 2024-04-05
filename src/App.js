@@ -1,41 +1,27 @@
 
 import './App.css';
-import { Routes,Route } from 'react-router-dom';
+import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import Namedetails from './Components/Namedetails';
-import EmailDetails from './Components/Emaildetails';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router';
-// import {BrowserRouter as Router, Route , Switch} from 'react-router'
-
-// import NameDetails from './Components/NameDetails';
-
+import Emaildetails from './Components/Emaildetails';
+import Adress from './Components/Adress';
+import Payment from './Components/Payment';
+import Summary from './Components/Summary';
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+   <>
+     <BrowserRouter>
     <Routes>
-    <div className="App">
      
-        <Route path="/" exact component={Namedetails} />
-        <Route path="/email" component={EmailDetails} />
-      
-    </div>
-  </Routes>
+      <Route path="/" exact element={<Namedetails/>} />
+        <Route path="/email" element={<Emaildetails/>} />
+        <Route path="/adress" element={<Adress />} />
+        <Route path="/payment" element={<Payment />}/> 
+        <Route path="/summary" element={<Summary />}/>
+    </Routes>
+    </BrowserRouter>
+   </>
+   
   );
 }
 
