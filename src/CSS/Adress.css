@@ -1,39 +1,53 @@
-.add{
-   align-items: center;
-   margin:5%;
-
+/* Adress.css */
+h1{
+    text-align: center;
+    margin:0;
+    padding-bottom:1%;
 }
-h1 {
-    font-size: 24px;
-    color: #333; /* or any color you prefer */
+.add {
+    
+    
   }
   
-  div {
-    margin-top: 10px; /* adjust as needed */
-    font-size: 18px;
+  .add label {
+    color:white;
+    display: block;
+    text-align: center;
+    
+    margin-left:20%;
+    margin-top:2%;
+    margin-bottom: 2%;
   }
   
-  label {
-    display: block; /* ensures label and textarea are on separate lines */
-    margin-top: 20px; /* adjust as needed */
-    padding-left:10%;
-  }
-  #w3review{
-    align-items: center;
-    padding-left:5%;
-    padding-right:5%;
-    /* padding-top:10%;
-    padding-bottom:10%; */
-    margin:5%;
-  }
-  textarea {
-    align-self: center;
-    width: 80%;
-    padding-left:20%;
+  .add textarea {
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:2%;
+    margin-bottom:2%;
+
+    width: 70%;
     padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc; /* or any border style you prefer */
+    border: 1px solid #ccc;
     border-radius: 5px;
-    resize: vertical; /* allows vertical resizing */
+  }
+  
+  .button-container2 {
+    margin-left:50%;
+    margin-top: 20px;
+  }
+  
+  .button-container2 button {
+    margin-right: 10px ;
+    margin-left:30px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-container2 button:hover {
+    background-color: #0056b3;
   }
   

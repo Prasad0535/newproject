@@ -1,0 +1,42 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .checkbox-container {
+    margin-top:5%;
+    margin-bottom: 20px;
+    padding-bottom:10px;
+    margin-left:40%;
+  }
+  
+  .checkbox-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+.button-container3 {
+    margin-left:40%;
+    margin-top: 20px;
+  }
+  
+  .button-container3 button {
+    margin-right: 10px ;
+    margin-left:20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-container3 button:hover {
+    background-color: #0056b3;
+  }
+  
