@@ -7,7 +7,7 @@ function Adress() {
         <>
             <h1>Enter your Address</h1>
             <div className="add">
-                <label htmlFor="address">Address</label>
+                {/* <label htmlFor="address">Address</label> */}
                 <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea>
             </div>
             <div className="button-container2">

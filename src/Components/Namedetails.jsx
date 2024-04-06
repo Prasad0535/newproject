@@ -1,11 +1,21 @@
 import React from 'react'
 import '../CSS/Name.css'
-import { unstable_HistoryRouter } from 'react-router-dom';
-
+//import { useState } from 'react';
+//import {useNavigate}  from 'react-router-dom';
 import { Link} from 'react-router-dom'
-function Namedetails(props) {
+
+function Namedetails({onNext}) {
   const [name,setname]=React.useState("");
- // const history=useHistory();
+  // const navigate=useNavigate();
+  // const handleNext=()=>{
+  //   onNext({name});
+  // };
+  // const handleNext=()=>{
+  //   navigate({
+  //     pathname:"/email",
+  //     state:{name:name}
+  //   })
+  // }
   return(
   <>
   <h1>Namedetails</h1>
@@ -14,7 +24,7 @@ function Namedetails(props) {
   </div>
   
   <div className="button-container1">
-                <Link to="/email"><button>Next</button></Link>    
+                <Link to="/email"><button >Next</button></Link>    
             </div>
 
  </> 
