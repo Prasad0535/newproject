@@ -1,5 +1,14 @@
+
+.summary-container{
+    margin-bottom:10%;
+    /* padding-bottom:10%; */
+      /* background-color: blue; */
+}
+.summary-container h1{
+  padding-bottom:10%;
+}
 .button-container4 {
-    margin-left:50%;
+    margin-left:0%;
     margin-top: 20px;
   }
   

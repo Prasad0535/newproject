@@ -1,15 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../CSS/Summary.css'; // Import CSS file
 import { Link } from 'react-router-dom';
+// import Namedetails from './Namedetails';
+import Emaildetails from './Emaildetails';
 function Summary({userInfo}) {
  
     function alertMessage(){
         alert('Submitted Successfully')
     }
+    const [step, setStep]=useState(1);
+    const[name,setName]=useState("");
+    const[email,setEmail]=useState("");
+    const handleNext=(value)=>{
+        switch(step){
+            case 1:setName(value);
+            break;
+            case 2 : setEmail(value);
+            break;
+            default : 
+            break;
+        }
+        if(step < 2){
+            setStep(step+1)
+        }else{
+            console.log('Name',name);
+            console.log('Email',email);
+        }
+    }
     return (
         <div className="summary-container">
             <h1>View Summary</h1>
+             {/* {step ===1 && <Namedetails onNext={handleNext} />}  */}
+            {step ===2 && <Emaildetails onNext={handleNext} />} 
             {/* <div className="summary-details">
                 <p>Name: {userInfo?.name}</p>
                 <p>Email: {userInfo.email}</p>

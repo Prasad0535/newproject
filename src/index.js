@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import Weather from './Weather';
+ import App3 from './App3';
 import reportWebVitals from './reportWebVitals';
 
+const App=()=>{
+  const [showApp3Component,setshowApp3Component]=useState(true);
+  const handleNextButtononClick=()=>{
+    setshowApp3Component(false);
+  };
+
+return(
+  <>
+    <div>
+      {showApp3Component ? (<App3 onNextButtonClick={handleNextButtononClick} />):
+      <Weather />}
+    </div>
+  </>
+)
+};
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+   
   </React.StrictMode>
 );
 

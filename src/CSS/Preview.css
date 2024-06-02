@@ -1,19 +1,24 @@
 .box{
     margin:5%;
     padding:1%;
+    border: solid black;
 }
 div{
     text-align: center;
     color:black;
     font-size: medium;
     background-color: azure;
+    margin-top:10%;
+    margin-bottom:10%;
+    margin-left:10%;
+    margin-right:10%;
     
 }
-.button-container5 {
+.button5 {
     margin-left:30%;
   }
   
-.button-container5 button1 {
+.button5 button1 {
     margin-right: 10px ;
     margin-left:30px;
     padding: 10px 20px;
@@ -24,6 +29,6 @@ div{
     cursor: pointer;
   }
   
-.button-container5 button1:hover {
+.button5 button1:hover {
     background-color: #0056b3;
   }

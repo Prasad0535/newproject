@@ -1,0 +1,24 @@
+
+.photos {
+    padding-top: 10%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax value as needed */
+    grid-gap: 0px;
+  }
+  
+  .photos {
+    width: 100%;
+  }
+  
+  .photos img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+ 
+ 
+  

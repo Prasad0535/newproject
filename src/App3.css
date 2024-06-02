@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(255, 127, 144);
+}
+h1{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.count-input {
+    text-align: center;
+    font-size: large;
+}
+
